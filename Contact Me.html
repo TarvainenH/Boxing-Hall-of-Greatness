@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="tyyli.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="contact-me">
+
+    <header>
+        <nav class="navbar-top">
+            <ul>
+                <li><a href="index.html" class="active">Boxing Hall of Greatness</a></li>
+            </ul>
+        </nav>
+
+        <nav class="navbar-bottom">
+            <ul>
+                <li><a href="About Me.html" class="active">About Me</a></li>
+                <li><a href="The Hall.html" class="active">The Hall</a></li>
+                <li><a href="Contact Me.html" class="active">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contact-me-content-wrapper">
+        <h5>Ota minuun yhteyttä</h5>
+        <form action="https://formspree.io/f/xzzbbpyk" method="POST">
+            <label for="fullname">Koko nimi*</label>
+            <div class="name-split">
+                <div class="name-field">
+                    <input type="text" id="firstname" name="firstname" required>
+                    <label for="firstname">Etunimi</label>
+                </div>
+                <div class="name-field">
+                    <input type="text" id="lastname" name="lastname" required>
+                    <label for="lastname">Sukunimi</label>
+                </div>
+            </div>
+
+            <label for="email">Sähköposti*</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Anna palautetta</label>
+            <textarea id="message" name="message"></textarea>
+
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+            <div class="lähetä">
+                <button type="submit">Lähetä</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
